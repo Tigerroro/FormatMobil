@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<formations>
+    <formation id="1">
+        <libelle>Gestion d'équipe</libelle>
+        <objectifs>Améliorer le travail d'équipe</objectifs>
+        <date_debut>2025-06-10</date_debut>
+        <date_fin>2025-06-12</date_fin>
+        <salle>Salle A</salle>
+        <public_vise>Bénévoles</public_vise>
+        <intervenants>
+            <intervenant>Jean Dupont</intervenant>
+            <intervenant>Claire Martin</intervenant>
+        </intervenants>
+    </formation>
+
+    <formation id="2">
+        <libelle>Communication associative</libelle>
+        <objectifs>Mieux communiquer au sein des associations</objectifs>
+        <date_debut>2025-07-01</date_debut>
+        <date_fin>2025-07-02</date_fin>
+        <salle>Salle B</salle>
+        <public_vise>Dirigeants</public_vise>
+        <intervenants>
+            <intervenant>Marc Lebrun</intervenant>
+        </intervenants>
+    </formation>
+</formations>
