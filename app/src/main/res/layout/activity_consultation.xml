@@ -1,50 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fond"
-    android:padding="16dp">
+    android:background="@drawable/bg_consultation_gradient">
 
+    <!-- Liste des formations -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFormations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonDeconnexion"
+        android:padding="16dp"
+        android:clipToPadding="false" />
+
+    <!-- Message si aucune formation -->
     <TextView
         android:id="@+id/textViewAucuneFormation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:text="Aucune formation disponible"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
         android:visibility="gone" />
 
-    <TextView
-        android:id="@+id/textViewTitre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Catalogue des formations"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewFormations"
-        android:layout_width="379dp"
-        android:layout_height="597dp"
-        android:layout_below="@id/textViewTitre"
-        android:layout_marginTop="16dp"
-        tools:ignore="SpeakableTextPresentCheck" />
-
+    <!-- Bouton de déconnexion -->
     <Button
         android:id="@+id/buttonDeconnexion"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Déconnexion"
         android:layout_alignParentBottom="true"
-        android:text="Se déconnecter"
-        android:textColor="@android:color/holo_red_dark" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
 </RelativeLayout>
-
-
-
-
-

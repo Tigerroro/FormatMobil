@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.formaapp.R
 import com.example.formaapp.adapters.FormationAdapter
 import com.example.formaapp.utils.XmlFormationHelper
+import com.example.formaapp.data.models.Formation // ✅ CE CI-LA EST ESSENTIEL
 
 class ConsultationActivity : AppCompatActivity() {
 
@@ -23,11 +24,11 @@ class ConsultationActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerViewFormations)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        val formations = XmlFormationHelper.lireFormationsDepuisRes(this)
+        // ✅ Chargement des données XML
+        val formations: List<Formation> = XmlFormationHelper.lireFormationsDepuisRes(this)
 
         val textViewAucuneFormation = findViewById<TextView>(R.id.textViewAucuneFormation)
 
-// Vérifie si la liste est vide
         if (formations.isEmpty()) {
             recyclerView.visibility = RecyclerView.GONE
             textViewAucuneFormation.visibility = TextView.VISIBLE
@@ -36,20 +37,20 @@ class ConsultationActivity : AppCompatActivity() {
             textViewAucuneFormation.visibility = TextView.GONE
         }
 
+        // ✅ Initialisation de l'adapter avec callback sur clic
         adapter = FormationAdapter(formations) { formation ->
             val intent = Intent(this, FormationDetailsActivity::class.java)
             intent.putExtra("formation", formation)
             startActivity(intent)
         }
 
+        // ✅ Bouton de déconnexion
         val btnDeconnexion = findViewById<Button>(R.id.buttonDeconnexion)
-
         btnDeconnexion.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
-
 
         recyclerView.adapter = adapter
     }

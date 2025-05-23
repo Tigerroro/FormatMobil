@@ -2,69 +2,115 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="20dp"
+    android:background="@drawable/bg_consultation_gradient">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/white_rounded"
+        android:padding="24dp"
+        android:elevation="6dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center_horizontal"
+        android:clipToPadding="false">
 
         <TextView
-            android:id="@+id/textViewLibelleDetail"
-            android:layout_width="wrap_content"
+            android:id="@+id/titre"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Libellé"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:text="Titre de la formation"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#1E3A8A"
+            android:layout_marginBottom="16dp" />
 
         <TextView
-            android:id="@+id/textViewObjectifsDetail"
-            android:layout_width="wrap_content"
+            android:id="@+id/objectifs"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Objectifs" />
+            android:text="Objectifs de la formation"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
 
         <TextView
-            android:id="@+id/textViewDateDetail"
-            android:layout_width="wrap_content"
+            android:id="@+id/public_vise"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Dates" />
+            android:text="Public visé"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
 
         <TextView
-            android:id="@+id/textViewSalleDetail"
-            android:layout_width="wrap_content"
+            android:id="@+id/lieu"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Salle" />
+            android:text="Lieu"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
 
         <TextView
-            android:id="@+id/textViewPublicDetail"
-            android:layout_width="wrap_content"
+            android:id="@+id/description"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Public visé" />
+            android:text="Description"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
 
         <TextView
-            android:id="@+id/textViewIntervenantsDetail"
-            android:layout_width="wrap_content"
+            android:id="@+id/contenu"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Intervenants" />
+            android:text="Contenu"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/cout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coût"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
+
+        <!-- ✅ AJOUTS -->
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dates"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/intervenants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intervenants"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
+        <!-- ✅ FIN AJOUTS -->
 
         <Button
             android:id="@+id/buttonRetour"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="430dp"
-            android:text="Retour" />
+            android:text="Retour"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#546E7A"
+            android:textColor="@android:color/white"
+            android:elevation="4dp" />
 
-        <Button
-            android:id="@+id/buttonDeconnexion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Se déconnecter"
-            android:layout_marginTop="8dp"
-            android:textColor="@android:color/holo_red_dark" />
     </LinearLayout>
 </ScrollView>

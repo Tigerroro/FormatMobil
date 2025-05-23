@@ -13,4 +13,66 @@
         </intervenants>
     </formation>
 
+    <formation id="2">
+        <libelle>IA</libelle>
+        <description>Apprendre les bases de l'IA</description>
+        <objectifs>Être capable d'utiliser une IA</objectifs>
+        <contenu>Instructif</contenu>
+        <cout>500</cout>
+        <date_debut>2025-06-01</date_debut>
+        <date_fin>2025-06-03</date_fin>
+        <salle>Toulouse</salle>
+        <public_vise>Tout le monde</public_vise>
+        <intervenants>
+            <intervenant>Jean Dubois</intervenant>
+            <intervenant>Pauline Martin</intervenant>
+        </intervenants>
+    </formation>
+
+    <formation id="3">
+        <libelle>Secourisme</libelle>
+        <description>Apprendre les gestes de premiers secours</description>
+        <objectifs>Être capable de donner les premiers soins</objectifs>
+        <contenu>Instructif</contenu>
+        <cout>275</cout>
+        <date_debut>2025-06-10</date_debut>
+        <date_fin>2025-06-12</date_fin>
+        <salle>Toulouse</salle>
+        <public_vise>Tout le monde</public_vise>
+        <intervenants>
+            <intervenant>Camille Leclerc</intervenant>
+            <intervenant>Ali Benyahia</intervenant>
+        </intervenants>
+    </formation>
+
+    <formation id="4">
+        <libelle>Communication</libelle>
+        <description>Faire une communication impactante</description>
+        <objectifs>Être capable de réaliser une communication qui marque l'utilisateur</objectifs>
+        <contenu>Instructif</contenu>
+        <cout>300</cout>
+        <date_debut>2025-06-20</date_debut>
+        <date_fin>2025-06-22</date_fin>
+        <salle>Toulouse</salle>
+        <public_vise>Tout le monde</public_vise>
+        <intervenants>
+            <intervenant>Sophie André</intervenant>
+        </intervenants>
+    </formation>
+
+    <formation id="5">
+        <libelle>Gestion</libelle>
+        <description>Apprendre à améliorer sa gestion</description>
+        <objectifs>Être capable d’avoir une gestion précise et efficace</objectifs>
+        <contenu>Instructif</contenu>
+        <cout>150</cout>
+        <date_debut>2025-06-28</date_debut>
+        <date_fin>2025-06-30</date_fin>
+        <salle>Toulouse</salle>
+        <public_vise>Tout le monde</public_vise>
+        <intervenants>
+            <intervenant>Luc Ferrand</intervenant>
+        </intervenants>
+    </formation>
+
 </formations>

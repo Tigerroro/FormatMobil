@@ -3,8 +3,8 @@
     <stagiaire id="1">
         <nom>Martin</nom>
         <prenom>Jean</prenom>
-        <email>jean.martin@example.com</email>
-        <mdp>azerty123</mdp>
+        <email>je@je</email>
+        <mdp>mdp</mdp>
         <cp>57000</cp>
         <ville>Metz</ville>
         <fonction>Bénévole</fonction>

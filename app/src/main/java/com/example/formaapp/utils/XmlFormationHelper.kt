@@ -16,7 +16,10 @@ object XmlFormationHelper {
 
             var id = 0
             var libelle = ""
+            var description: String? = null
             var objectifs: String? = null
+            var contenu: String? = null
+            var cout: Double? = null
             var dateDebut: String? = null
             var dateFin: String? = null
             var salle: String? = null
@@ -34,7 +37,10 @@ object XmlFormationHelper {
                                 intervenants = mutableListOf()
                             }
                             "libelle" -> libelle = parser.nextText()
+                            "description" -> description = parser.nextText()
                             "objectifs" -> objectifs = parser.nextText()
+                            "contenu" -> contenu = parser.nextText()
+                            "cout" -> cout = parser.nextText().toDoubleOrNull()
                             "date_debut" -> dateDebut = parser.nextText()
                             "date_fin" -> dateFin = parser.nextText()
                             "salle" -> salle = parser.nextText()
@@ -42,13 +48,17 @@ object XmlFormationHelper {
                             "intervenant" -> intervenants.add(parser.nextText())
                         }
                     }
+
                     XmlPullParser.END_TAG -> {
                         if (tag == "formation") {
                             formations.add(
                                 Formation(
                                     id_formation = id,
                                     libelle = libelle,
+                                    description = description,
                                     objectifs = objectifs,
+                                    contenu = contenu,
+                                    cout = cout,
                                     date_debut = dateDebut,
                                     date_fin = dateFin,
                                     salle = salle,
